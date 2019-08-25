@@ -4,5 +4,5 @@
 2. Run game.html file 
 3. Enjoy Playing Connect Four Game with AI
 
-#Control
+# Control
 Hover mouse over a column and click to give move.
