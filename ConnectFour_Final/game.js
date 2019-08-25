@@ -231,6 +231,15 @@ class Game{
 
             }
         }
+        if(max.c_index==null){
+            for(let i=0; i<this.cols; i++){
+                if(this.isPossibleMove(field,i)){
+                    max.c_index = i;
+                    break;
+                }
+            }
+        }
+        
         return max;
 
 
@@ -275,6 +284,15 @@ class Game{
 
             }
         }
+        if(min.c_index==null){
+            for(let i=0; i<this.cols; i++){
+                if(this.isPossibleMove(field,i)){
+                    min.c_index = i;
+                    break;
+                }
+            }
+        }
+        
         return min;
 
     }
@@ -290,7 +308,7 @@ class Game{
             }
         }
         if(field.player === 0) field.player = 1;
-        else field.player = 0; // problem hoite pare
+        else field.player = 0; 
 
         return rVal;
 
