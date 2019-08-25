@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Connect Four</title> 
+    <link rel="stylesheet" href="game.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script>
+        window.JQuery || document.write("<script src='jquery.js'><\/script>")
+    </script>
+   
+</head>
+<body>
+
+    <div><b>Connect Four Game</b></div><br>
+    <div><i></i>
+        <span style="margin-left: 50px; padding: 1px">
+            <button style="padding: 2px; font-size: 1.5rem;" class="btn_restart">Play Again</button>
+        </span>
+    </div>
+    
+    <div class="board">
+        <div class="row">
+            <div class = "col" r-index = "5" c-index = "0"></div> 
+            <div class = "col" r-index = "5" c-index = "1"></div>
+            <div class = "col" r-index = "5" c-index = "2"></div>
+            <div class = "col" r-index = "5" c-index = "3"></div>
+            <div class = "col" r-index = "5" c-index = "4"></div>
+            <div class = "col" r-index = "5" c-index = "5"></div>
+            <div class = "col" r-index = "5" c-index = "6"></div>
+        </div>
+        <div class="row">
+            <div class = "col" r-index = "4" c-index = "0"></div>
+            <div class = "col" r-index = "4" c-index = "1"></div>
+            <div class = "col" r-index = "4" c-index = "2"></div>
+            <div class = "col" r-index = "4" c-index = "3"></div>
+            <div class = "col" r-index = "4" c-index = "4"></div>
+            <div class = "col" r-index = "4" c-index = "5"></div>
+            <div class = "col" r-index = "4" c-index = "6"></div>
+        </div>
+        <div class="row">
+            <div class = "col" r-index = "3" c-index = "0"></div>
+            <div class = "col" r-index = "3" c-index = "1"></div>
+            <div class = "col" r-index = "3" c-index = "2"></div>
+            <div class = "col" r-index = "3" c-index = "3"></div>
+            <div class = "col" r-index = "3" c-index = "4"></div>
+            <div class = "col" r-index = "3" c-index = "5"></div>
+            <div class = "col" r-index = "3" c-index = "6"></div>
+        </div>
+        <div class="row">
+            <div class = "col" r-index = "2" c-index = "0"></div>
+            <div class = "col" r-index = "2" c-index = "1"></div>
+            <div class = "col" r-index = "2" c-index = "2"></div>
+            <div class = "col" r-index = "2" c-index = "3"></div>
+            <div class = "col" r-index = "2" c-index = "4"></div>
+            <div class = "col" r-index = "2" c-index = "5"></div>
+            <div class = "col" r-index = "2" c-index = "6"></div>
+        </div>
+        <div class="row">
+            <div class = "col" r-index = "1" c-index = "0"></div>
+            <div class = "col" r-index = "1" c-index = "1"></div>
+            <div class = "col" r-index = "1" c-index = "2"></div>
+            <div class = "col" r-index = "1" c-index = "3"></div>
+            <div class = "col" r-index = "1" c-index = "4"></div>
+            <div class = "col" r-index = "1" c-index = "5"></div>
+            <div class = "col" r-index = "1" c-index = "6"></div>
+        </div>
+        <div class="row">
+            <div class = "col" r-index = "0" c-index = "0"></div>
+            <div class = "col" r-index = "0" c-index = "1"></div>
+            <div class = "col" r-index = "0" c-index = "2"></div>
+            <div class = "col" r-index = "0" c-index = "3"></div>
+            <div class = "col" r-index = "0" c-index = "4"></div>
+            <div class = "col" r-index = "0" c-index = "5"></div>
+            <div class = "col" r-index = "0" c-index = "6"></div>
+        </div>
+    </div>
+    
+</body>
+
+<script src="game.js"></script>
+
+</html>
